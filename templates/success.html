@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class=""theme-toggle>
+        <label>
+            🌙
+            <input type="checkbox" id="toggle-dark">
+        </label>
+    </div>
+    <div class="container">
+        <h1>Thank you for subscribing!</h1>
+        <p>We've added <strong>{{ email }} to our newsletter list.</p>
+    </div>
+    <script src="{{ url_for('static',filename='theme_toggle.js') }}"></script>
+</body>
+</html>
