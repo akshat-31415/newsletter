@@ -1,0 +1,55 @@
+:root {
+    --bg-color: #f0f8ff;
+    --text-color: #000;
+    --box-bg: white;
+    --button-bg: #007BFF;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --box-bg: #1e1e1e;
+    --button-bg: #2196F3;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: var(--box-bg);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+input[type="email"]{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
